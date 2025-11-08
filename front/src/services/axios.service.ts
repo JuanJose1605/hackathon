@@ -1,9 +1,6 @@
-import axios from "axios"
-
+import axios from "axios";
 
 export const axiosClient = axios.create({
-    baseURL: process.env.BACKEND_URL || 'http://localhost:3000/',
-    headers:{
-        "Content-Type": 'application/json'
-    }
-})
+  baseURL: "http://localhost:4000", 
+  headers: { "Content-Type": "application/json" },
+});

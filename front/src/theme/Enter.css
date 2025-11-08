@@ -1,0 +1,55 @@
+/* Fondo general del contenido dentro del EnterForm */
+.enter-content {
+  width: 100%;
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  height: 100%;
+}
+
+/* Contenedor de los botones */
+.button-container {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  max-width: 350px;
+  margin-bottom: 2rem;
+  gap: 1rem;
+}
+
+/* Estilo base de los botones */
+.enter-button {
+  flex: 1;
+  border: none;
+  border-radius: 30px;
+  padding: 14px 0;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* Estilos individuales */
+.enter-button.visitante {
+  background-color: #3bbd5e;
+  color: #1f1e1e;
+}
+
+.enter-button.emprendedor {
+  background-color: #ffb84d; /* tono naranja Huila 😄 */
+  color: #1f1e1e;
+}
+
+/* Hover */
+.enter-button:hover {
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.25);
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+  .button-container {
+    flex-direction: column;
+  }
+}

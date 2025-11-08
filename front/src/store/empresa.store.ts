@@ -10,6 +10,7 @@ interface User {
     imageUrl: string;
     email: string;
     password: string;
+    telefono: string;
     createAt?: Date;
     updateAt?: Date;
 }

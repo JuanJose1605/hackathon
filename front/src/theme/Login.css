@@ -1,0 +1,115 @@
+/* Contenedor general centrado */
+.login-container {
+  text-align: center;
+  padding: 1rem;
+  width: 100%;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  /* 🔹 Súbelo un poco */
+  margin-top: -170px; /* Puedes probar con -20px o -35px según se vea mejor */
+}
+
+/* Título y subtítulo */
+.login-title {
+  margin: 0 0 0.4rem 0;
+  font-size: 1.7rem;
+  font-weight: 700;
+  color: #111;
+}
+
+.login-subtitle {
+  color: #444;
+  margin: 0 0 1.2rem 0;
+  font-size: 0.95rem;
+}
+
+/* Inputs blancos borde negro */
+.login-input {
+  width: 90%;
+  max-width: 300px;
+  padding: 12px 14px;
+  margin: 8px 0;
+  border-radius: 10px;
+  background: #ffffff;
+  border: 2px solid #000;
+  outline: none;
+  font-size: 1rem;
+  text-align: left;
+}
+
+.login-input::placeholder {
+  color: #555;
+}
+
+/* Botón base (comparten estilo visual) */
+.login-btn {
+  width: 90%;
+  max-width: 330px;
+  padding: 12px;
+  border: none;
+  border-radius: 12px;
+  background-color: #000;
+  color: #fff;
+  font-weight: 700;
+  font-size: 1.05rem;
+  cursor: pointer;
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.15);
+  transition: transform 0.05s ease, box-shadow 0.2s ease, opacity 0.15s ease;
+}
+
+/* 🔹 Botón "Continuar" más pegado a los campos */
+.login-btn--primary {
+  margin-top: 6px;   /* casi pegado a los cuadros */
+  margin-bottom: 8px;
+}
+
+/* 🔹 Botón "Registrate" más separado hacia abajo */
+.login-btn--secondary {
+  margin-top: 30px;  /* más distancia del anterior */
+}
+
+/* Hover/active */
+.login-btn:hover {
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.22);
+}
+.login-btn:active {
+  transform: translateY(1px);
+  opacity: 0.9;
+}
+
+/* Términos */
+.login-terms {
+  font-size: 0.8rem;
+  color: #666;
+  margin-top: 1rem;
+  max-width: 85%;
+  margin-inline: auto;
+  line-height: 1.3;
+  text-align: center; /* 🔹 centra el texto */
+  word-wrap: break-word;
+
+}
+
+
+/* Imágenes decorativas */
+.decor-left,
+.decor-right {
+  filter: none;
+}
+
+/* Ajustes individuales */
+.decor-left {
+  bottom: -90px; /* 🔹 baja más la izquierda */
+}
+
+.decor-right {
+  bottom: -40px;           /* 🔹 baja más la derecha */
+  transform: rotate(180deg); /* 🔹 gira 90° adicionales (ahora 180° total) */
+}
+
+
+
+
